@@ -12,19 +12,45 @@
 
 - プロジェクト名、保存先のパスは、標準モジュールのinput関数、または、TkinterやStreamlitのようなGUIを使って事前に取得しておきましょう。
 
+```text
+生成されるプロジェクトのディレクトリ構成
+
+プロジェクト名：my_project
+保存先のパス：parent_directory
+
+<parent_directory>
+　└<my_project>
+　　├<.git> (option)
+　　├<.venv> (option)
+　　├README.md
+　　├pyproject.toml
+　　├LICENSE
+　　├<docs>
+　　├<logs>
+　　├<my_project>
+　　│　├<config>
+　　│　├my_project.py
+　　│　└__init__.py
+　　└[tests]
+　　　　└test_my_project.py
+```
+
 ## Usage
+
+使い方
 
 ### Installation
 
-pip install git+https://github.com/MafuyuMinamo/pypjtgene.git
+`pip install git+https://github.com/MafuyuMinamo/pypjtgene.git`
 
-### function / method
+### class / method / function
 
 #### class ProjectGenerator
 
-##### set_parent_dir_path
+##### `set_parent_dir_path`
 
-プロジェクトを保存するフォルダ（親フォルダ）のパスを取得する
+- summary
+  - プロジェクトを保存するフォルダ（親フォルダ）のパスを取得する
 
 - Args
   - parent_dir_path (str): プロジェクトを保存するフォルダのパス
@@ -32,9 +58,10 @@ pip install git+https://github.com/MafuyuMinamo/pypjtgene.git
 - returns
   - bool: 有効なパスなら True
 
-##### set_project_name
+##### `set_project_name`
 
-プロジェクト名を取得する
+- summary
+  - プロジェクト名を取得する
 
 - Args
   - pj_name (str): プロジェクト名
@@ -42,28 +69,32 @@ pip install git+https://github.com/MafuyuMinamo/pypjtgene.git
 - returns
   - bool: 有効なパスなら True
 
-##### execute
+##### `execute`
 
-プロジェクトの生成を実行する
+- summary
+  - プロジェクトの生成を実行する
 
 - returns
   - bool: 成功したら True
 
-##### project_root_path (property)
+##### `project_root_path (property)`
 
-プロジェクトフォルダのパスのゲッター
+- summary
+  - プロジェクトフォルダのパスのゲッター
 
-##### create_venv
+##### `create_venv`
 
-プロジェクトに仮想環境のインストールを行う
+- summary
+  -プロジェクトに仮想環境のインストールを行う
 
 - Args
   - project_path (str): プロジェクトフォルダのパス
   - exec (bool, optional): 仮想環境をインストールを行う場合は True（デフォルトは True）
 
-##### git_init
+##### `git_init`
 
-git init を実行する
+- summary
+  - git init を実行する
 
 - Args
   - project_path (str): プロジェクトフォルダのパス
@@ -71,12 +102,20 @@ git init を実行する
 
 ### Examples of use
 
+コーディング例
+
+```text
 Work in progress.
+```
 
 ### Uninstallation
 
-pip uninstall pypjtgene
+アンイストール方法
+
+`pip uninstall pypjtgene`
 
 ## Dependencies
 
-Work in progress.
+依存関係の表記
+
+- Work in progress.
