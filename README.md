@@ -2,6 +2,8 @@
 
 ## Overview
 
+概要
+
 - このモジュールは、『プロジェクト名と保存先のパスを渡せば、あとは自動でPythonプロジェクトのディレクトリ構成を生成してくれる仕組み』を提供します。
 
 - オプション機能
@@ -10,7 +12,7 @@
 
   - Gitによるリポジトリの初期セットアップ（git init）
 
-- プロジェクト名、保存先のパスは、標準モジュールのinput関数、または、TkinterやStreamlitのようなGUIを使って事前に取得しておきましょう。
+- プロジェクト名、保存先のパスは、組み込み関数のinput()、または、TkinterやStreamlitのようなGUIを使って事前に取得しておきましょう。
 
 ```text
 生成されるプロジェクトのディレクトリ構成
@@ -40,6 +42,8 @@
 使い方
 
 ### Installation
+
+インストール方法
 
 `pip install git+https://github.com/MafuyuMinamo/pypjtgene.git`
 
