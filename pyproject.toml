@@ -3,3 +3,7 @@ name = "pypjtgene"
 version = "0.0.1"
 
 dependencies =  []
+
+[tool.pytest.ini_options]
+pythonpath = "pypjtgene"
+testpaths = ["tests",]
