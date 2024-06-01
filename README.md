@@ -108,8 +108,32 @@
 
 コーディング例
 
-```text
-Work in progress.
+```python
+import os
+
+from pypjtgene import ProjectGenerator
+
+
+def example_pypjtgene():
+
+    pj_name = "myproject"
+    parent_dir = os.path.expanduser("~/Desktop")
+
+    ex = ProjectGenerator()
+    ex.set_project_name(pj_name)
+    ex.set_parent_dir_path(parent_dir)
+    ex.execute()
+
+    pj_path = ex.project_root_path
+
+    ex.create_venv(pj_path)
+    ex.git_init(pj_path)
+
+
+if __name__ == "__main__":
+
+    example_pypjtgene()
+
 ```
 
 ### Uninstallation
@@ -122,4 +146,4 @@ Work in progress.
 
 依存関係の表記
 
-- Work in progress.
+- None
