@@ -2,8 +2,8 @@ import os
 import pathlib
 import subprocess
 
-from pjtree import ProjectTree
-from mylogger import MyStreamLogger
+from .pjtree import ProjectTree
+from .mylogger import MyStreamLogger
 
 log = MyStreamLogger("DEBUG")
 
