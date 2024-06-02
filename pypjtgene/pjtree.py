@@ -153,7 +153,7 @@ class ProjectTree:
             f.write("# venv\n")
             f.write("venv/\n")
             f.write(".venv/\n")
-            f.write(".env/\n")
+            f.write(".env\n")
             f.write("\n")
             f.write("# test\n")
             f.write(".pytest_cache/\n")
