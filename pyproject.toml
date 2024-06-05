@@ -7,3 +7,4 @@ dependencies =  []
 [tool.pytest.ini_options]
 pythonpath = "pypjtgene"
 testpaths = ["tests",]
+addopts = "--color=yes --log-cli-level=DEBUG"
